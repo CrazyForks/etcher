@@ -79,7 +79,9 @@
         "node_modules/roboto-fontface/fonts/roboto/Roboto-Bold.woff"
       ],
       "mac": {
-        "category": "public.app-category.developer-tools"
+        "category": "public.app-category.developer-tools",
+        "hardenedRuntime": true,
+        "entitlements": "./etcher.entitlements.mac.plist"
       },
       "dmg": {
         "iconSize": 110,
