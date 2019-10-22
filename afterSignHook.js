@@ -15,13 +15,14 @@ const { notarize } = require('electron-notarize')
 const notarizing = async (context) => {
   const { electronPlatformName, appOutDir } = context
   if (electronPlatformName !== 'darwin') {
-    return Promise.resolve()
+    return
   }
 
   const appName = context.packager.appInfo.productFilename
   const appleId = 'accounts+apple@balena.io'
 
-  return notarize({
+  console.log('Notarizing app', appleId, context)
+  await notarize({
     appBundleId: 'io.balena.etcher',
     appPath: `${appOutDir}/${appName}.app`,
     appleId,
