@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.5.61
+## (2019-10-22)
+
+* Debug macos app notarization [Alexis Svinartchouk]
+* Test electron-notarize afterSignHook [Lorenzo Alberto Maria Ambrosi]
+* macOS Catalina compatibility [Lorenzo Alberto Maria Ambrosi]
+
 # v1.5.60
 ## (2019-10-18)
 
